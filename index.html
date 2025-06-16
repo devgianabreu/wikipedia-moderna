@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wikipedia Moderna</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f5f6f7;
+      color: #202122;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #3366cc;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    header input {
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      border: none;
+      width: 200px;
+    }
+    nav {
+      background-color: #2a4b8d;
+      display: flex;
+      gap: 1rem;
+      padding: 0.6rem 2rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffc107;
+    }
+    .container {
+      display: flex;
+      flex: 1;
+      max-width: 1200px;
+      margin: 2rem auto;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+    aside {
+      width: 250px;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    aside h3 {
+      margin-bottom: 0.5rem;
+      color: #3366cc;
+    }
+    main {
+      flex: 1;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    main h2 {
+      color: #3366cc;
+      margin-bottom: 1rem;
+    }
+    main p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    footer {
+      background-color: #2a4b8d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      aside {
+        width: 100%;
+      }
+      header input {
+        width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wikipedia Moderna</h1>
+    <input type="text" placeholder="Pesquisar...">
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Artigos</a>
+    <a href="#">Categorias</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="container">
+    <aside>
+      <h3>Categorias</h3>
+      <ul>
+        <li><a href="#">Tecnologia</a></li>
+        <li><a href="#">História</a></li>
+        <li><a href="#">Ciências</a></li>
+        <li><a href="#">Geografia</a></li>
+        <li><a href="#">Arte & Cultura</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>HTML - Linguagem de Marcação de Hipertexto</h2>
+      <p>
+        HTML (HyperText Markup Language) é a linguagem responsável por estruturar conteúdo na web. Cada parte de uma página, como parágrafos, imagens e links, é representada por elementos HTML.
+      </p>
+      <p>
+        O HTML evoluiu muito desde suas primeiras versões, e hoje, com o HTML5, conseguimos incorporar multimídia, formular interações complexas e muito mais.
+      </p>
+
+      <h2>CSS - Folhas de Estilo em Cascata</h2>
+      <p>
+        CSS (Cascading Style Sheets) é a tecnologia que define as regras de estilo de um site. Sem o CSS, todas as páginas seriam brancas, pretas e sem identidade visual.
+      </p>
+      <p>
+        Com CSS3, recursos avançados como animações, grids responsivos e design moderno estão ao nosso alcance.
+      </p>
+
+      <h2>JavaScript - Tornando tudo interativo</h2>
+      <p>
+        JavaScript é o motor da interatividade na web. Ele permite criar desde simples botões até aplicações complexas como plataformas de redes sociais ou sistemas de e-commerce.
+      </p>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Wikipedia Moderna. Projeto educativo. Desenvolvido por [Dev Gian Abreu].
+  </footer>
+
+</body>
+</html>
